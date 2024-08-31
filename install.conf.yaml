@@ -5,10 +5,20 @@
 - clean: ['~']
 
 - link:
+    # Vim
     ~/.vimrc: app/vim/vimrc
+    
+    # ZSH
+    ~/.zsh: app/zsh/zsh
+    ~/.zshrc: app/zsh/zshrc
 
 - create:
     - ~/Code
 
-#- shell:
-#  - [git submodule update --init --recursive, Installing submodules]
+- shell:
+    -
+     command: ./app/homebrew/install.sh
+     stdin: true
+     stdout: true
+     stderr: true
+     description: Install HomeBrew
