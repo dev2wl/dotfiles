@@ -34,6 +34,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set sidebar icon size to medium
 # defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
+# Displays have separe spaces
+defaults write com.apple.spaces spans-displays -bool true
+
 # Always show scrollbars
 # defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
@@ -895,7 +898,6 @@ defaults write com.apple.dock expose-group-apps -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" \
 # 	"Address Book" \
 # 	"Calendar" \
 # 	"Contacts" \
@@ -914,9 +916,10 @@ for app in "Activity Monitor" \
 # 	"Transmission" \
 # 	"Tweetbot" \
 # 	"Twitter" \
+for app in "Activity Monitor" \
  	"Dock" \
  	"cfprefsd" \
- 	"iCal"; do
+ 	"SystemUIServer"; do
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."

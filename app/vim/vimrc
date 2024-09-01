@@ -1,6 +1,9 @@
 " Set line numbers
 set nu
 
+" Enable syntax
+syntax on
+
 " Set tab width to 4 spaces
 set tabstop=4
 
