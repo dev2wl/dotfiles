@@ -32,4 +32,11 @@
      stdout: true
      stderr: true
      description: Install HomeBrew
+    -
+     command: ./app/macos/configuration.zsh
+     stdin: true
+     stdout: true
+     stderr: true
+     description: Configuration MacOS
     - brew services restart sketchybar
+    
