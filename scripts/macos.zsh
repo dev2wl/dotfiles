@@ -365,6 +365,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set the icon size of Dock items to 36 pixels
 # defaults write com.apple.dock tilesize -int 36
 
+# Set the group windows by application
+defaults write com.apple.dock expose-group-apps -bool true
+
 # Change minimize/maximize window effect
 # defaults write com.apple.dock mineffect -string "scale"
 
@@ -892,12 +895,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Kill affected applications                                                  #
 ###############################################################################
 
-# for app in "Activity Monitor" \
+for app in "Activity Monitor" \
 # 	"Address Book" \
 # 	"Calendar" \
-# 	"cfprefsd" \
 # 	"Contacts" \
-# 	"Dock" \
 # 	"Finder" \
 # 	"Google Chrome Canary" \
 # 	"Google Chrome" \
@@ -913,7 +914,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # 	"Transmission" \
 # 	"Tweetbot" \
 # 	"Twitter" \
-# 	"iCal"; do
-# 	killall "${app}" &> /dev/null
-# done
+ 	"Dock" \
+ 	"cfprefsd" \
+ 	"iCal"; do
+	killall "${app}" &> /dev/null
+done
 echo "Done. Note that some of these changes require a logout/restart to take effect."

@@ -27,16 +27,10 @@
 
 - shell:
     -
-     command: ./app/homebrew/install.sh
-     stdin: true
-     stdout: true
-     stderr: true
-     description: Install HomeBrew
-    -
-     command: ./app/macos/configuration.zsh
-     stdin: true
-     stdout: true
-     stderr: true
-     description: Configuration MacOS
+      command: ./app/homebrew/install.sh
+      stdin: true
+      stdout: true
+      stderr: true
+      description: Install HomeBrew
     - brew services restart sketchybar
     
