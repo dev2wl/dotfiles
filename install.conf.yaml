@@ -13,11 +13,17 @@
     ~/.zshrc: app/zsh/zshrc
 
     # AeroSpace
-    ~/.config/aerospace/aerospace.toml: app/aerospace/aerospace.toml
+    ~/.config/aerospace: app/aerospace
+
+    # Sketchybar
+    ~/.config/sketchybar: app/sketchybar
 
 - create:
     - ~/Code
     - ~/.hushlogin
+
+    # Create empty folders
+    - ~/.config
 
 - shell:
     -

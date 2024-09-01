@@ -1,9 +1,11 @@
 # Taps
 tap "homebrew/bundle"
 tap "nikitabobko/tap"
+tap "FelixKratz/formulae"
 
 # Brews (Packages)
 brew "nvm"
+brew "sketchybar"
 
 # Casks (Applications)
 cask "aerospace"
@@ -14,3 +16,5 @@ cask "visual-studio-code"
 cask "telegram"
 cask "notion"
 cask "phpstorm"
+cask "sequel-ace"
+cask "font-hack-nerd-font"
