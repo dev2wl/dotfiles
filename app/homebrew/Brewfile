@@ -1,0 +1,14 @@
+# Taps
+tap "homebrew/bundle"
+
+# Brews (Packages)
+brew "nvm"
+
+# Casks (Applications)
+cask "discord"
+cask "docker"
+cask "google-chrome"
+cask "visual-studio-code"
+cask "telegram"
+cask "notion"
+cask "phpstorm"

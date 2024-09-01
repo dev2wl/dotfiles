@@ -9,3 +9,5 @@ else
   echo "Homebrew is already installed."
 fi
 
+# Homebrew bundle (this path only for install from root directory of dotfiles)
+brew bundle --verbose --file ./app/homebrew/Brewfile
