@@ -32,3 +32,4 @@
      stdout: true
      stderr: true
      description: Install HomeBrew
+    - brew services restart sketchybar
