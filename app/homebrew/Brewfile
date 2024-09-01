@@ -1,10 +1,12 @@
 # Taps
 tap "homebrew/bundle"
+tap "nikitabobko/tap"
 
 # Brews (Packages)
 brew "nvm"
 
 # Casks (Applications)
+cask "aerospace"
 cask "discord"
 cask "docker"
 cask "google-chrome"

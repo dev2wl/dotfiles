@@ -12,6 +12,9 @@
     ~/.zsh: app/zsh/zsh
     ~/.zshrc: app/zsh/zshrc
 
+    # AeroSpace
+    ~/.config/aerospace/aerospace.toml: app/aerospace/aerospace.toml
+
 - create:
     - ~/Code
     - ~/.hushlogin
