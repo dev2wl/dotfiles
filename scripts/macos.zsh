@@ -35,7 +35,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Displays have separe spaces
-defaults write com.apple.spaces spans-displays -bool true
+defaults write com.apple.spaces spans-displays -bool false
 
 # Always show scrollbars
 # defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
