@@ -22,6 +22,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #sudo scutil --set LocalHostName "0x6D746873"
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
 
+# Auto-Hide for the Top Menu Bar
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
 # Disable the sound effects on boot
 # sudo nvram SystemAudioVolume=" "
 
