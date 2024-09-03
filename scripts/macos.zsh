@@ -362,11 +362,14 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Move the Dock to the some Side
+defaults write com.apple.dock orientation -string "left"
+
 # Enable highlight hover effect for the grid view of a stack (Dock)
 # defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Set the icon size of Dock items to 36 pixels
-# defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 36
 
 # Set the group windows by application
 defaults write com.apple.dock expose-group-apps -bool true
@@ -416,13 +419,13 @@ defaults write com.apple.dock expose-group-apps -bool true
 # defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
 
 # Make Dock icons of hidden applications translucent
 # defaults write com.apple.dock showhidden -bool true
 
 # Don’t show recent applications in Dock
-# defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.dock show-recents -bool false
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
 #defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
