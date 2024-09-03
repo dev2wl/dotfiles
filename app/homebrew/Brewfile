@@ -6,6 +6,7 @@ tap "FelixKratz/formulae"
 # Brews (Packages)
 brew "nvm"
 brew "sketchybar"
+brew "borders"
 
 # Casks (Applications)
 cask "aerospace"

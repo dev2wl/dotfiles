@@ -18,6 +18,9 @@
     # Sketchybar
     ~/.config/sketchybar: app/sketchybar
 
+    # Borders
+    ~/.config/borders: app/borders
+
 - create:
     - ~/Code
     - ~/.hushlogin
